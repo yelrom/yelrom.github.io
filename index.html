@@ -1,15 +1,275 @@
-<html><head>
-<title>Wiener Workshop</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta property="og:image" content="wienerworkshoplogo.png">
+<html lang="en"><head>
+		<title>Wiener Workshop</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta property="og:image" content="wienerworkshoplogo.png">
+		<style>
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+	-webkit-text-size-adjust: none;
+}
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	body {
+		-ms-overflow-style: scrollbar;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #ffffff;
+	}
+
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+/* Type */
+
+	body, input, select, textarea {
+		font-size: 16pt;
+        line-height: 1.75;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 14pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+/* unvisited link */
+a:link {
+  color: #06c;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #06c;
+  	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #06c;
+  text-decoration: none;
+}
+
+/* Image */
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image img {
+			border-radius: 4px;
+			display: block;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+		.image.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.image.main img {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.image.main {
+					margin: 0 0 2em 0;
+				}
+
+			}
+
+
+/* Header */
+
+	#header {
+		padding: 8em 0 0.1em 0 ;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				padding: 4em 0 0.1em 0 ;
+			}
+
+		}
+
+/* Main */
+
+	#main {
+		padding: 0em 0 6em 0 ;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			#main {
+				padding: 0em 0 4em 0 ;
+			}
+
+		}
+
+/* Footer */
+
+	#footer {
+		padding: 5em 0 6em 0 ;
+	}
+
+		@media screen and (max-width: 1280px) {
+
+			#footer {
+				padding: 5em 0 3em 0 ;
+			}
+		}
+
+		
+
+		@media screen and (max-width: 736px) {
+
+			#footer {
+				padding: 3em 0 1em 0 ;
+			}
+		}
+
+/* Wrapper */
+
+	#wrapper > * > .inner {
+		width: 100%;
+		max-width: 68em;
+		margin: 0 auto;
+		padding: 0 2.5em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			#wrapper > * > .inner {
+				padding: 0 1.25em;
+			}
+
+		}
+  </style>
 </head>
-<body>
-<a href="javascript:window.location.reload(true)"><img width="128px" src="wienerworkshoplogo.svg"></a>		
-<pre style="word-wrap: break-word; white-space: pre-wrap;">Interactive Production &amp; Creative Technology @ Droga5
+<body class="">
+	<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+            	<header id="header">
+                	<div class="inner">
+                    	<!-- Logo -->
+                        	<a href="javascript:window.location.reload(true)"><img width="128px" src="wienerworkshoplogo.svg"></a></div>
+</header>
+					<div id="main">
+						<div class="inner">
+							<header>
+								<br>
+							<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                <div id="factDisplay" style="font-size: 16px; font-family: sans-serif; font-weight: normal; color: black; opacity: 0.5;">Interactive Production &amp; Creative Technology @ Droga5</div>
 
-in New York, New York
+                            </font></font><div style="text-align:right;"><a style="font-size: 16px; font-family: sans-serif; font-weight: normal; opacity: 0.5;" href="https://docs.google.com/presentation/d/e/2PACX-1vRrEp4bV0IGtNQo-KIhWP5SfFJu3MyA2kM73DXeqi9Lzwho073xWddVHnBq-XjtB6U-Z-MegjTD6yIH/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p">Selected Work ⧉</a>
+<br><a style="font-size: 16px; font-family: sans-serif; font-weight: normal; opacity: 0.5;" href="mailto:morley@wienerworkshop.com">Email ⧉</a></div><footer><font style="vertical-align: inherit;"><p style="font-family: sans-serif; font-size: 14px; color: black; opacity: 0.5;"><br>Copyright © 2022 Morley Wiener
+                            <br>New York, New York
+                            </p></font></footer></header></div></div></div>
 
-morley@wienerworkshop.com</pre>
-</body>
-</html>
+
+</body></html>
