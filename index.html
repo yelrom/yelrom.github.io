@@ -3,30 +3,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: monospace
+  font-family: monospace;
+  background: url('https://lorempixel.com/g/800/800/');
+  min-height: 100vh;
 }
-.image-holder {
-  width: 64px;
-  height: 64px;
-  background: rgba(0, 0, 0, 1);
+
+#content {
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+#content:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  z-index: -1;
+  background: 
+  linear-gradient(-45deg, transparent 45%, #000 45%, #000 55%, transparent 55%) 0 0/10px 10px,
+  linear-gradient(-45deg, transparent 45%, #000 45%, #000 55%, transparent 55%) 5px 0px/10px 10px;
+  background-color:rgba(255,255,255,0.5);
 }
 </style>
 <title>Wiener Workshop</title>
 </head>
 <body>
 <a onClick="window.location.reload();" style="cursor: pointer;">
-<div class="image-holder">
+<div id="content">
 <center><b>WIENER</b><br/><b style="letter-spacing: 3.5px;">WORK</b><br/><b style="letter-spacing: 3.5px;">SHOP</b></center>
 </div>
 </a>
 <br/><br/>
-dedicated to the artistic production of interactive work in a wide range of media, including AR/VR, Web3, and emerging technologies.
+<i>dedicated to the artistic production of interactive work in a wide range of media, including AR/VR, Web3, and emerging technologies.</i>
 <br/><br/>
-morley@wienerworkshop.com
+<u>morley@wienerworkshop.com</u>
 <br/><br/>
 Copyright © 2022 Morley Wiener
 <br/>
