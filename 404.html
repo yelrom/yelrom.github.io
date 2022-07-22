@@ -1,7 +1,15 @@
 <html>
-<head>    
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<pre style="word-wrap: break-word; white-space: pre-wrap;">404</pre>
+<pre>
+<p id="demo"></p>
+</pre>
+<script>
+var path = location.pathname.slice(1);
+document.getElementById("demo").innerHTML =
+path;
+</script>
 </body>
 </html>
